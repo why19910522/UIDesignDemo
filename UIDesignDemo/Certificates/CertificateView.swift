@@ -16,9 +16,9 @@ struct CertificateView : View {
                     Text("UI Design")
                         .font(.headline)
                         .fontWeight(.bold)
-                        .color(.accent)
+                        .foregroundColor(.accent)
                     Text("Certificate")
-                        .color(.white)
+                        .foregroundColor(.white)
                 }
                 Spacer()
                 Image.logo
