@@ -85,4 +85,12 @@ extension Color {
     static var secondary: Color {
         return Color("secondary")
     }
+    
+    static var backgroundShadow3: Color {
+        return Color("backgroundShadow3")
+    }
+    
+    static var backgroundShadow4: Color {
+        return Color("backgroundShadow4")
+    }
 }

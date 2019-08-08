@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9018F7D422D72ED7001F869F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018F7D322D72ED7001F869F /* AppDelegate.swift */; };
 		9018F7D622D72ED7001F869F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018F7D522D72ED7001F869F /* SceneDelegate.swift */; };
-		9018F7D822D72ED7001F869F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018F7D722D72ED7001F869F /* RootView.swift */; };
 		9018F7DA22D72ED9001F869F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9018F7D922D72ED9001F869F /* Assets.xcassets */; };
 		9018F7DD22D72ED9001F869F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9018F7DC22D72ED9001F869F /* Preview Assets.xcassets */; };
 		9018F7E022D72ED9001F869F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9018F7DE22D72ED9001F869F /* LaunchScreen.storyboard */; };
@@ -20,13 +19,16 @@
 		9018F7F122D77AF0001F869F /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018F7F022D77AF0001F869F /* TitleView.swift */; };
 		9018F7F322D77B27001F869F /* CardBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018F7F222D77B27001F869F /* CardBottomView.swift */; };
 		9018F7F822D77C74001F869F /* CertificatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9018F7F722D77C74001F869F /* CertificatesView.swift */; };
+		906BF18A22F31A4F006B73D4 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BF18922F31A4F006B73D4 /* Home.swift */; };
+		9085A57322F3E0F800C75BF6 /* HomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9085A57222F3E0F800C75BF6 /* HomeList.swift */; };
+		9085A57622F3F07100C75BF6 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9085A57522F3F07100C75BF6 /* BlurView.swift */; };
+		9085A57822F4097100C75BF6 /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9085A57722F4097100C75BF6 /* UpdateList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9018F7D022D72ED7001F869F /* UIDesignDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDesignDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9018F7D322D72ED7001F869F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9018F7D522D72ED7001F869F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9018F7D722D72ED7001F869F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		9018F7D922D72ED9001F869F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9018F7DC22D72ED9001F869F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9018F7DF22D72ED9001F869F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +40,10 @@
 		9018F7F022D77AF0001F869F /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		9018F7F222D77B27001F869F /* CardBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBottomView.swift; sourceTree = "<group>"; };
 		9018F7F722D77C74001F869F /* CertificatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesView.swift; sourceTree = "<group>"; };
+		906BF18922F31A4F006B73D4 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		9085A57222F3E0F800C75BF6 /* HomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeList.swift; sourceTree = "<group>"; };
+		9085A57522F3F07100C75BF6 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		9085A57722F4097100C75BF6 /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		9018F7D222D72ED7001F869F /* UIDesignDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9085A57422F3F05C00C75BF6 /* View */,
 				9018F7E722D73B1A001F869F /* Core */,
 				9018F7F422D77C12001F869F /* Launch */,
 				9018F7F622D77C3C001F869F /* Certificates */,
@@ -103,7 +110,9 @@
 			children = (
 				9018F7D322D72ED7001F869F /* AppDelegate.swift */,
 				9018F7D522D72ED7001F869F /* SceneDelegate.swift */,
-				9018F7D722D72ED7001F869F /* RootView.swift */,
+				906BF18922F31A4F006B73D4 /* Home.swift */,
+				9085A57222F3E0F800C75BF6 /* HomeList.swift */,
+				9085A57722F4097100C75BF6 /* UpdateList.swift */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -118,6 +127,14 @@
 				9018F7EE22D77339001F869F /* CardView.swift */,
 			);
 			path = Certificates;
+			sourceTree = "<group>";
+		};
+		9085A57422F3F05C00C75BF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9085A57522F3F07100C75BF6 /* BlurView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,13 +209,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9018F7EF22D77339001F869F /* CardView.swift in Sources */,
+				9085A57822F4097100C75BF6 /* UpdateList.swift in Sources */,
 				9018F7D422D72ED7001F869F /* AppDelegate.swift in Sources */,
 				9018F7F322D77B27001F869F /* CardBottomView.swift in Sources */,
+				906BF18A22F31A4F006B73D4 /* Home.swift in Sources */,
 				9018F7E922D73B42001F869F /* Color.swift in Sources */,
+				9085A57622F3F07100C75BF6 /* BlurView.swift in Sources */,
 				9018F7ED22D772EE001F869F /* CertificateView.swift in Sources */,
 				9018F7D622D72ED7001F869F /* SceneDelegate.swift in Sources */,
-				9018F7D822D72ED7001F869F /* RootView.swift in Sources */,
 				9018F7EB22D73D28001F869F /* Image.swift in Sources */,
+				9085A57322F3E0F800C75BF6 /* HomeList.swift in Sources */,
 				9018F7F822D77C74001F869F /* CertificatesView.swift in Sources */,
 				9018F7F122D77AF0001F869F /* TitleView.swift in Sources */,
 			);
