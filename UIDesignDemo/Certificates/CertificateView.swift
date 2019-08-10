@@ -9,26 +9,42 @@
 import SwiftUI
 
 struct CertificateView : View {
+    
+    let title: String
+    let image: Image
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
                 VStack(alignment: .leading) {
-                    Text("UI Design")
+                    Text(title)
                         .font(.headline)
                         .fontWeight(.bold)
                         .foregroundColor(.accent)
                     Text("Certificate")
                         .foregroundColor(.white)
                 }
-                Spacer()
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .padding(.top, 20)
+                .padding(.leading, 20)
+                
+                Spacer().frame(minWidth: 0)
+                
                 Image.logo
+                    .resizable()
+                    .renderingMode(.original)
+                    .frame(width: 30, height: 30)
+                    .padding(.trailing, 20.0)
                 }
                 .padding(.horizontal)
-            Image.background
+            
+            image
                 .resizable()
-                .frame(width: 340.0, height: 146)
+                .renderingMode(.original)
+                .frame(minWidth: 0, maxWidth: .infinity,
+                       minHeight: 0, maxHeight: 200)
+                .offset(y: 50)
             }
-            .frame(width: 340.0, height: 220)
             .background(Color.black)
             .cornerRadius(10)
             .shadow(radius: 20)
@@ -38,7 +54,7 @@ struct CertificateView : View {
 #if DEBUG
 struct CertificateView_Previews : PreviewProvider {
     static var previews: some View {
-        CertificateView()
+        CertificateView(title: "UI Design", image: Image.certificate1)
     }
 }
 #endif

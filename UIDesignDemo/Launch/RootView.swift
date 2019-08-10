@@ -9,36 +9,38 @@
 import SwiftUI
 
 struct RootView: View {
-    var body: some View {
-        TabView {
-            Home().tabItem {
-                VStack {
-                    Image.iconHome
-                    Text("Home")
-                }
-            }
-            
-            UpdateList().tabItem {
-                VStack {
-                    Image.iconSettings
-                    Text("Update")
-                }
-            }
-            
-            Settings().tabItem {
-                VStack {
-                    Image.iconSettings
-                    Text("Settings")
-                }
-            }
+  var body: some View {
+    TabView {
+      Home().tabItem {
+        VStack {
+          Image.iconHome
+          Text("Home")
         }
+      }
+      
+      UpdateList().tabItem {
+        VStack {
+          Image.iconSettings
+          Text("Update")
+        }
+      }
+      
+      Settings().tabItem {
+        VStack {
+          Image.iconSettings
+          Text("Settings")
+        }
+      }
     }
+    .edgesIgnoringSafeArea(.top)
+  }
 }
 
 #if DEBUG
 struct RootView_Previews: PreviewProvider {
-    static var previews: some View {
-        RootView()
-    }
+  static var previews: some View {
+    RootView()
+  }
 }
 #endif
+

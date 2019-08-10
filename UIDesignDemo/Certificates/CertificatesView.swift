@@ -49,7 +49,7 @@ struct CertificatesView : View {
                 .blendMode(.hardLight)
                 .animation(.easeInOut(duration: 0.4))
             
-            CertificateView()
+            CertificateView(title: "UI Design", image: Image.certificate1)
                 .offset(viewState)
                 .scaleEffect(0.95)
                 .rotationEffect(Angle(degrees: show ? 5 : 0))

@@ -26,6 +26,10 @@
 		9087DE5922FC19640034BC1A /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9087DE5822FC19640034BC1A /* UpdateStore.swift */; };
 		9087DE5B22FC32610034BC1A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9087DE5A22FC32610034BC1A /* RootView.swift */; };
 		908FA76822FE5E700083EABB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908FA76722FE5E700083EABB /* Settings.swift */; };
+		908FA76A22FE97130083EABB /* CertificateRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908FA76922FE97130083EABB /* CertificateRow.swift */; };
+		908FA76E22FEB8200083EABB /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908FA76D22FEB8200083EABB /* Global.swift */; };
+		908FA77122FEBB260083EABB /* UIWindowSceneExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908FA77022FEBB260083EABB /* UIWindowSceneExtension.swift */; };
+		908FA77322FEBBDA0083EABB /* UIStatusBarManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908FA77222FEBBDA0083EABB /* UIStatusBarManagerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		9087DE5822FC19640034BC1A /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
 		9087DE5A22FC32610034BC1A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		908FA76722FE5E700083EABB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		908FA76922FE97130083EABB /* CertificateRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateRow.swift; sourceTree = "<group>"; };
+		908FA76D22FEB8200083EABB /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		908FA77022FEBB260083EABB /* UIWindowSceneExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowSceneExtension.swift; sourceTree = "<group>"; };
+		908FA77222FEBBDA0083EABB /* UIStatusBarManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStatusBarManagerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +113,10 @@
 		9018F7E722D73B1A001F869F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				908FA76F22FEBB090083EABB /* Extension */,
 				9018F7E822D73B42001F869F /* Color.swift */,
 				9018F7EA22D73D28001F869F /* Image.swift */,
+				908FA76D22FEB8200083EABB /* Global.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -132,6 +142,7 @@
 				9018F7F722D77C74001F869F /* CertificatesView.swift */,
 				9018F7F022D77AF0001F869F /* TitleView.swift */,
 				9018F7F222D77B27001F869F /* CardBottomView.swift */,
+				908FA76922FE97130083EABB /* CertificateRow.swift */,
 				9018F7EC22D772EE001F869F /* CertificateView.swift */,
 				9018F7EE22D77339001F869F /* CardView.swift */,
 			);
@@ -144,6 +155,15 @@
 				9085A57522F3F07100C75BF6 /* BlurView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		908FA76F22FEBB090083EABB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				908FA77022FEBB260083EABB /* UIWindowSceneExtension.swift */,
+				908FA77222FEBBDA0083EABB /* UIStatusBarManagerExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,11 +239,14 @@
 			files = (
 				9018F7EF22D77339001F869F /* CardView.swift in Sources */,
 				9085A57822F4097100C75BF6 /* UpdateList.swift in Sources */,
+				908FA76E22FEB8200083EABB /* Global.swift in Sources */,
 				9018F7D422D72ED7001F869F /* AppDelegate.swift in Sources */,
+				908FA77122FEBB260083EABB /* UIWindowSceneExtension.swift in Sources */,
 				9018F7F322D77B27001F869F /* CardBottomView.swift in Sources */,
 				906BF18A22F31A4F006B73D4 /* Home.swift in Sources */,
 				9018F7E922D73B42001F869F /* Color.swift in Sources */,
 				9085A57622F3F07100C75BF6 /* BlurView.swift in Sources */,
+				908FA77322FEBBDA0083EABB /* UIStatusBarManagerExtension.swift in Sources */,
 				9018F7ED22D772EE001F869F /* CertificateView.swift in Sources */,
 				9018F7D622D72ED7001F869F /* SceneDelegate.swift in Sources */,
 				9018F7EB22D73D28001F869F /* Image.swift in Sources */,
@@ -232,6 +255,7 @@
 				9018F7F822D77C74001F869F /* CertificatesView.swift in Sources */,
 				9087DE5922FC19640034BC1A /* UpdateStore.swift in Sources */,
 				9018F7F122D77AF0001F869F /* TitleView.swift in Sources */,
+				908FA76A22FE97130083EABB /* CertificateRow.swift in Sources */,
 				9087DE5B22FC32610034BC1A /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
