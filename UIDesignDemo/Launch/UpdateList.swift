@@ -28,31 +28,45 @@ let updateData = [
 
 struct UpdateList: View {
     
-    @State var updates = updateData
-    
-    @State var isPresented = false
+    @ObservedObject var store = UpdateStore(updates: updateData)
     
     var body: some View {
         NavigationView {
-            List(updates) { item in
-                NavigationLink(destination: UpdateDetail(update: item)) {
-                    UpdateRow(update: item)
+            List {
+                ForEach(store.updates) { item in
+                    NavigationLink(destination: UpdateDetail(update: item)) {
+                        UpdateRow(update: item)
+                    }
+                    .padding(.vertical, 8)
                 }
-                .padding(.vertical, 8)
+                .onDelete(perform: delete)
+                .onMove(perform: move)
             }
             .navigationBarTitle(Text("Updates"))
-            .navigationBarItems(trailing: Button(action: {
-                self.isPresented = true
-            }, label: {
-                Image(systemName: "gear")
-            }))
-        }
-        .sheet(isPresented: $isPresented) {
-            Text("Settings")
+            .navigationBarItems(
+                leading: Button(action: addUpdate, label: {
+                    Text("Add Update")
+                }),
+                trailing: EditButton()
+            )
         }
         .animation(.default)
     }
     
+    func addUpdate() {
+        
+        store.updates.append(Update(image: .certificate2, title: "SwiftUI Advanced", text: "This course will focus on API data.", date: "JUL 26"))
+    }
+    
+    func delete(at indexSet: IndexSet) {
+        guard let index = indexSet.first else { return }
+        store.updates.remove(at: index)
+    }
+    
+    func move(from source: IndexSet, to destination: Int) {
+        guard let sourceIndex = source.first else { return }
+        store.updates.swapAt(sourceIndex, destination)
+    }
 }
 
 #if DEBUG
@@ -93,6 +107,7 @@ struct UpdateRow: View {
                     .foregroundColor(.gray)
             }
         }
+        .animation(nil)
     }
 }
 
