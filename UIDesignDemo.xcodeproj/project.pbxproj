@@ -25,6 +25,7 @@
 		9085A57822F4097100C75BF6 /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9085A57722F4097100C75BF6 /* UpdateList.swift */; };
 		9087DE5922FC19640034BC1A /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9087DE5822FC19640034BC1A /* UpdateStore.swift */; };
 		9087DE5B22FC32610034BC1A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9087DE5A22FC32610034BC1A /* RootView.swift */; };
+		908FA76822FE5E700083EABB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908FA76722FE5E700083EABB /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		9085A57722F4097100C75BF6 /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 		9087DE5822FC19640034BC1A /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
 		9087DE5A22FC32610034BC1A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		908FA76722FE5E700083EABB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				9085A57222F3E0F800C75BF6 /* HomeList.swift */,
 				9085A57722F4097100C75BF6 /* UpdateList.swift */,
 				9087DE5822FC19640034BC1A /* UpdateStore.swift */,
+				908FA76722FE5E700083EABB /* Settings.swift */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				9018F7ED22D772EE001F869F /* CertificateView.swift in Sources */,
 				9018F7D622D72ED7001F869F /* SceneDelegate.swift in Sources */,
 				9018F7EB22D73D28001F869F /* Image.swift in Sources */,
+				908FA76822FE5E700083EABB /* Settings.swift in Sources */,
 				9085A57322F3E0F800C75BF6 /* HomeList.swift in Sources */,
 				9018F7F822D77C74001F869F /* CertificatesView.swift in Sources */,
 				9087DE5922FC19640034BC1A /* UpdateStore.swift in Sources */,

@@ -24,6 +24,13 @@ struct RootView: View {
                     Text("Update")
                 }
             }
+            
+            Settings().tabItem {
+                VStack {
+                    Image.iconSettings
+                    Text("Settings")
+                }
+            }
         }
     }
 }
